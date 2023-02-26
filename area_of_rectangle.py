@@ -39,7 +39,7 @@ def area_of_rectangle(height, width = None):
 
 if __name__ == '__main__':
     if len(sys.argv) == 2:
-        height = float(sys.argv[1])
+        height = int(sys.argv[1])
         area = area_of_rectangle(height)
         message = "The area of a {h} X {w} rectangle is {a}".format(
             h=height,
@@ -48,8 +48,8 @@ if __name__ == '__main__':
         )
         print(message)
     elif len(sys.argv) == 3:
-        height = float(sys.argv[1])
-        width = float(sys.argv[2])
+        height = int(sys.argv[1])
+        width = int(sys.argv[2])
         area = area_of_rectangle(height, width)
         message = "The area of a {h} X {w} rectangle is {a}".format(
             h=height,
